@@ -1,9 +1,10 @@
-module github.com/corazawaf/coraza-caddy/v2
+module github.com/latomate/coraza-caddy/v2
 
 go 1.23.0
 
 require (
 	github.com/caddyserver/caddy/v2 v2.9.1
+	github.com/corazawaf/coraza-caddy/v2 v2.0.0
 	github.com/corazawaf/coraza-coreruleset/v4 v4.7.0
 	github.com/corazawaf/coraza/v3 v3.3.3
 	github.com/jcchavezs/mergefs v0.1.0
@@ -156,9 +157,11 @@ require (
 	google.golang.org/genproto/googleapis/api v0.0.0-20241007155032-5fefd90f89a9 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20241007155032-5fefd90f89a9 // indirect
 	google.golang.org/grpc v1.67.1 // indirect
-	google.golang.org/protobuf v1.35.1 // indirect
+	google.golang.org/protobuf v1.36.2 // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	howett.net/plist v1.0.0 // indirect
 	rsc.io/binaryregexp v0.2.0 // indirect
 )
+
+replace github.com/corazawaf/coraza/v3 => github.com/latomate/coraza/v3 v3.3.4-0.20250331140230-1605c9426984
